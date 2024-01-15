@@ -31,10 +31,14 @@ header {
     padding: 0 70px;
 }
 
-a {
+nav ul a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+}
+
+#logo-side a {
+    text-decoration: none;
 }
 
 li {
@@ -58,12 +62,54 @@ a:hover {
     border-radius: 5%;
 }
 
+li:has(a#linkedin) {
+    margin-left: 10px;
+}
+
 #linkedin i {
     color: var(--bg-color-main)
 }
 
 #bull, #title-logo {
     margin-left: 10px;
+}
+
+h2 {
+    display: inline;
+}
+
+#hamburger-icon {
+    font-size: 26px;
+    display: none;
+}
+
+/* Make nav responsive */
+@media(max-width: 1020px){
+    #bull, #title-logo {
+        display: none;
+    }
+}
+
+@media(max-width: 780px){
+    nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: inline;
+    }
+}
+
+@media(max-width: 420px) {
+    header {
+        padding: 0 20px;
+    }
+    #logo-side h2 {
+        font-size: 18px;
+    }
+    #hamburger-icon {
+        font-size: 20px;
+    }
 }
 
 /*##################################################################*/
