@@ -25,7 +25,6 @@ body {
 header {
     width: 100%;
     height: 4.5em;
-    border-bottom: solid 0.05em var(--fg-color-secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +45,25 @@ li {
 
 a:hover {
     color: var(--fg-color-secondary)
+}
+
+#github{
+    font-size: 26px;
+}
+
+#linkedin {
+    background-color: var(--fg-color-main);
+    padding: 0 5px;
+    padding-top: 3px;
+    border-radius: 5%;
+}
+
+#linkedin i {
+    color: var(--bg-color-main)
+}
+
+#bull, #title-logo {
+    margin-left: 10px;
 }
 
 /*##################################################################*/
